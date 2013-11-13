@@ -7,7 +7,7 @@ use SekoiaLearn\CrocodocBundle\DependencyInjection\CrocodocExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CrocodocBundle extends Bundle
+class SekoiaLearnCrocodocBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
