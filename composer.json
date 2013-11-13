@@ -1,0 +1,22 @@
+{
+    "name": "sekoialearn/crocodoc-symfony",
+    "description": "Symfony2 wrapper for the Crocodoc PHP library (https://github.com/crocodoc/crocodoc-php)",
+    "keywords": ["crocodoc", "crocodoc php", "crocodoc symfony", "crocodoc symfony2"],
+    "type": "symfony-bundle",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "require": {
+        "crocodoc/crocodoc-php": "dev-master",
+        "symfony/symfony": ">= 2.0.0"
+    },
+    "authors": [
+        {
+            "name": "SekoiaLearn",
+            "email": "developers@sekoialearn.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "SekoiaLearn\\CrocodocBundle": "" }
+    },
+    "target-dir": "SekoiaLearn/CrocodocBundle"
+}
