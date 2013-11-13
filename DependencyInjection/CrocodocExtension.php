@@ -16,21 +16,12 @@ class CrocodocExtension extends Extension
 
         $config = $this->processConfiguration($configuration, $configs);
 
-        /*$config = array();
-        foreach ($configs as $subConfig) {
-            $config = array_merge($config, $subConfig);
-        }*/
-
-
         $loader = new XmlFileLoader(
             $container,
             new FileLocator(__DIR__.'/../Resources/config')
         );
-        $loader->load('services.xml');
 
-        if(! $config['api_key']){
-            throw new \InvalidArgumentException("The Crocodoc API key must be set in the application's configuration");
-        }
+        $loader->load('services.xml');
 
         $container->setParameter('crocodoc.api_key', $config['api_key']);
     }
