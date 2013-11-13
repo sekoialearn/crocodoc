@@ -7,7 +7,7 @@
     </parameters>
 
     <services>
-        <service id="crocodoc.service" class="SekoiaLearn\CrocodocBundle\Service\CrocodocService">
+        <service id="crocodoc" class="SekoiaLearn\CrocodocBundle\Service\CrocodocService">
             <argument>%crocodoc.api_key%</argument>
         </service>
     </services>
