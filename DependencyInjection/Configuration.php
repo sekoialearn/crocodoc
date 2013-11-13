@@ -15,6 +15,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('crocodoc')
+                    ->isRequired()
                     ->children()
                         ->scalarNode('api_key')
                             ->isRequired()
