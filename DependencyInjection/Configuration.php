@@ -13,15 +13,11 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('crocodoc');
 
         $rootNode
+            ->isRequired()
             ->children()
-                ->arrayNode('crocodoc')
+                ->scalarNode('api_key')
                     ->isRequired()
-                    ->children()
-                        ->scalarNode('api_key')
-                            ->isRequired()
-                            ->cannotBeEmpty()
-                        ->end()
-                    ->end()
+                    ->cannotBeEmpty()
                 ->end()
             ->end();
 
