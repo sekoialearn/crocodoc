@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "license": "MIT",
     "require": {
-        "crocodoc/crocodoc-php": "dev-master",
+        "crocodoc/crocodoc-php": "v1.0.1",
         "symfony/symfony": ">= 2.0.0"
     },
     "authors": [
